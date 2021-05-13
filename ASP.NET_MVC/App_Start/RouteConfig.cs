@@ -14,9 +14,38 @@ namespace ASP.NET_MVC
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Expert",
+                url: "Expert",
+                defaults: new { controller = "Home", action = "Expert" }
+            );
+            routes.MapRoute(
                 name: "News",
-                url: "news",
+                url: "News",
                 defaults: new { controller = "Home", action = "News" }
+            );
+
+            routes.MapRoute(
+                name: "Knowledge",
+                url: "Knowledge",
+                defaults: new { controller = "Home", action = "Knowledge" }
+            );
+
+            routes.MapRoute(
+                name: "Login",
+                url: "Login",
+                defaults: new { controller = "Member", action = "Login" }
+            );
+
+            routes.MapRoute(
+                name: "Download",
+                url: "Download",
+                defaults: new { controller = "Member", action = "Download" }
+            );
+
+            routes.MapRoute(
+                name: "Register",
+                url: "Register",
+                defaults: new { controller = "Member", action = "Register" }
             );
 
             routes.MapRoute(

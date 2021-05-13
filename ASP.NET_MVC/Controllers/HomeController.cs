@@ -18,10 +18,13 @@ namespace ASP.NET_MVC.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Expert()
         {
-            ViewBag.Message = "Your contact page.";
+           return View();
+        }
 
+        public ActionResult Knowledge()
+        {
             return View();
         }
     }
